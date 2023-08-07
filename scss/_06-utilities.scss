@@ -1,0 +1,91 @@
+$colors: (
+  "primary": $clr-primary,
+  "dark": $clr-black,
+  "light": $clr-light,
+  "gray": $clr-gray,
+  "base": $clr-base,
+);
+
+@each $key, $val in $colors {
+  .bg {
+    &--#{$key} {
+      background-color: $val;
+    }
+  }
+  .text {
+    &--#{$key} {
+      color: $val;
+    }
+  }
+  .btn.bg--#{$key} {
+    @include btn($val);
+  }
+}
+
+$align: (
+  "center": center,
+  "left": left,
+  "right": right,
+  "justify": justify,
+);
+
+@each $key, $val in $align {
+  .text {
+    &--#{$key} {
+      text-align: $val;
+    }
+  }
+}
+
+$justify: (
+  "start": flex-start,
+  "center": center,
+  "end": flex-end,
+  "between": space-between,
+  "around": space-around,
+);
+
+@each $key, $val in $justify {
+  .justify {
+    &--#{$key} {
+      justify-content: $val;
+    }
+  }
+}
+
+$displays: flex, grid, block, inline-block, inline;
+@each $display in $displays {
+  .d--#{$display} {
+    display: $display;
+  }
+}
+
+$alignments: (
+  "start": flex-start,
+  "center": center,
+  "end": flex-end,
+);
+
+@each $key, $val in $alignments {
+  .align {
+    &--#{$key} {
+      align-items: $val;
+    }
+  }
+}
+
+@for $i from 1 through 10 {
+  .mb--#{$i} {
+    margin-bottom: $i + rem;
+  }
+  .py--#{$i}{
+    padding: $i + rem 0;
+  }
+  .my--#{$i}{
+    margin: $i + rem 0;
+  }
+  .mx--#{$i}{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

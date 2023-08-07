@@ -1,0 +1,31 @@
+.footer{
+    
+    align-items: center;
+    background-color: #D7E1F2;
+    &__wrapper{
+        padding-left: 0.3rem;
+        display: grid;
+       grid-template-columns: 1fr 1fr;
+       @include mediaQuery($break-md){
+         grid-template-columns: 1fr;
+         align-items: center;
+         text-align: center;
+    }
+
+}
+}
+.footer__icons a i{
+    margin-left: 1rem;
+    color: #1B202E;
+}
+.footer__icons a i:hover{
+    transition: all ease-in 0.3s;
+    color: #0793E1;
+}
+.footer__content h3{
+    text-align: right;
+    @include mediaQuery($break-md){
+        padding: 1rem 0;
+        text-align: center;
+   }
+   } 

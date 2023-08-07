@@ -1,0 +1,30 @@
+@mixin centerAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin mediaQuery($width: 48rem) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin btn($bg) {
+  padding: 0.8rem 1rem;
+  color: $clr-light;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 1rem;
+  display: inline-block;
+  background: $bg;
+  &:hover {
+    background: darken($bg, 10);
+  }
+}
+
+@mixin grid ($cols: 1, $gap: 1rem){
+  display: grid;
+  grid-template-columns: repeat($cols,1fr);
+  grid-gap:$gap;
+} 

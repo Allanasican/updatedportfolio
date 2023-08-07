@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+/>
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  </head>
+    
+<body class="bg--light">
+
+    <section class="bannerFull">
+          <header class="header align--center py--1">
+            <div class="container">
+            <div class="header__wrapper d--flex justify--between align--center ">
+
+              <div class="header__logo d--flex align--center">
+                <a href="index.html"> <img class="w-12r" src="img/LogoA.png" alt=""></a>
+                <div class="div">
+
+              </div>
+              
+              </div>
+  
+              <nav class="nav d--flex align--center">
+                <ul class="d--flex">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="Project.html" id="active">Project</a></li>
+                  <li><a href="contact.html">Contact</a></li>             
+                </ul>
+              </nav>
+
+              <div class="toggle__menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+            </div>
+            
+          </header>
+
+
+
+<section class="Project text--center text--dark py--5">
+  <h1 class="line-heading py--5">Project</h1>
+    <div class="container">
+            <div class="content ">
+                <div class="grid">
+                    <figure class="effect-zoe">
+                      <img src="img/Rectangle 13.png" alt="img25"/>
+                      <figcaption>
+                        <h2><i class="fa-brands fa-github fa-xl"></i><span> Preview </span></h2>
+                
+                       
+                      </figcaption>     
+                
+                  </div>
+              
+            <div class="grid">
+                <figure class="effect-zoe">
+                  <img src="img/Rectangle 11.png" alt="img25"/>
+                  <figcaption>
+                    <h2><i class="fa-brands fa-github fa-xl"></i><span> Preview </span></h2>
+            
+                   
+                  </figcaption>     
+            
+              </div>
+              <div class="grid">
+                <figure class="effect-zoe">
+                  <img src="img/Rectangle 12.png" alt="img25"/>
+                  <figcaption>
+                    <h2><i class="fa-brands fa-github fa-xl"></i><span> Preview </span></h2>
+            
+                   
+                  </figcaption>     
+            
+              </div>
+          
+              <div class="grid">
+                <figure class="effect-zoe">
+                  <img src="img/Rectangle 14.png" alt="img25"/>
+                  <figcaption>
+                    <h2><i class="fa-brands fa-github fa-xl"></i><span> Preview </span></h2>
+            
+                   
+                  </figcaption>     
+            
+              </div>
+              
+          
+          
+      
+    
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<section class="contact border-bottom py--5">
+
+<div class="contact__content text--center">
+   <h2 class="text--primary">Feel Free to contact me</h2>
+   <h4 class="mb--2 text--dark">If you are something interested, contact me.</h4>
+   <a class="border--2" href="#">Contact</a>
+
+</div>
+
+</section>
+
+
+
+
+<footer class="footer py--3">
+<div class="container">
+
+  <div class="footer__wrapper items--center">
+
+    <div class="footer__icons">
+
+      <a href=""><i class="fa-brands fa-github fa-2xl"></i></a>
+      <a href=""><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+      <a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a>
+      <a href=""><i class="fa-solid fa-envelope fa-2xl"></i></a>
+    </div>
+    
+    <div class="footer__content">
+      <h3 class="text--dark"> © Creative Portfolio Design</h3>
+    </div>
+
+  </div>
+</div>
+</footer>
+
+   <!------Script for toggle menu-->
+   <script>
+
+    const nav = document.querySelector('.nav');
+    const toggle__menu = document.querySelector('.toggle__menu');
+
+    toggle__menu.addEventListener("click",()=>{
+     toggle__menu.classList.toggle('open'); 
+     nav.classList.toggle('open');
+    })
+
+  </script>
+
+  </body>
+</html>
